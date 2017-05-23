@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Increment the version for each update. -->
+<Manifest version="1">
+    <!-- Your application will check for updates every (seconds) -->
+    <CheckInterval>600</CheckInterval>
+
+    <!-- The URI to the remote manifest -->
+    <RemoteConfigUri>https://anthonyjr2.github.io/afshub/update.xml</RemoteConfigUri>
+
+    <!-- This token must be the same at both ends to avoid tampering -->
+    <SecurityToken>738D142D49657EF347D2F65D57732</SecurityToken>
+    <!-- All payload files are assumed to have this URI prefix. -->
+    <BaseUri>https://anthonyjr2.github.io/afshub/</BaseUri>
+
+    <!-- One or more files containing updates. -->
+    <Payload>afshub.zip</Payload>
+</Manifest>
