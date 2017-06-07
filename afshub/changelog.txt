@@ -1,3 +1,7 @@
+6/07/17 - 1.0.5.4
+-Updated icon for hospital view
+-Changed NSLIJ hospital system to new virtual portal
+
 5/25/17 - 1.0.5.2
 -Removed Amerigroup because it is covered by Availity
 
