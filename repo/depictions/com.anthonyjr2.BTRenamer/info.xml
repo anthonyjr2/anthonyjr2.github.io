@@ -14,8 +14,8 @@
 	<shortDescription>Rename Bluetooth devices from within the Settings pane</shortDescription>
 	<descriptionlist>
 		<description>Tap on a Bluetooth device name to change it</description>
-		<description>Requires a reboot (which means that Electra will need to be re-run after)</description>
-		<description>I would suggest not rebooting until you change all of the names you want</description>
+		<description>Requires a reboot (which means that Electra will need to be re-run after). I would suggest not rebooting until you change all of the names you want</description>
+		<description>Credit to @Alexandre for most of the code, I just updated it for iOS 11.</description>
 		<description>No settings to configure</description>
 	</descriptionlist>
 	<screenshots>
