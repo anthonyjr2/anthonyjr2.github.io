@@ -1,55 +1,3 @@
-<!DOCTYPE html>
-<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-<html>
-<head>
-<style>
-body	{
-	background-color : #ffceed;
-}
-@keyframes heartfade {
-			0% {
-				opacity : 1;
-			}
-			50% {
-				opacity : 0;
-			}
-		}
-.heart {
-   z-index : 999;
-   position : absolute;
-}
-.heart:before,
-.heart:after {
-   content : "";
-   background-color : #fc2a62;
-   position : absolute;
-   height : 30px;
-   width : 45px;
-   border-radius : 15px 0px 0px 15px;
-}
-.heart:before {
-   transform : rotate(45deg);
-}
-.heart:after {
-   left : 10.5px;
-   transform : rotate(135deg);
-}
-</style>
-</head>
-
-<body>
-<h1>Secret Steph Page</h1>
-<p>hehehehehe</p>
-<img src="vday.png" title= "I love you!" alt="Impressive of you to discover this secret text." style="float:left"></img>
-
-<img src="sanic.png" title="yOuR'e ToO sLoW!!!111!!!!" alt= "WHERE DID SANIC GOOO???!?!?!?!?" style="float:right"></img>
-<!--<div class = "heart"></div>-->
-</body>
-<audio controls autoplay>
-  <source src="sanic.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-<script>
 var brd = document.createElement("DIV");
 document.body.insertBefore(brd, document.getElementById("board"));
 
@@ -146,8 +94,3 @@ function check()
 		generateHeart(event.pageX - brd.offsetLeft + cursorXOffset, event.pageY - brd.offsetTop + cursorYOffset, bound, start, scale);
 	}
 }
-</script>
-
-</html>
-
-
