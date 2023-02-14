@@ -33,15 +33,35 @@ body	{
    left : 10.5px;
    transform : rotate(135deg);
 }
+.wavy {
+  animation-name: wavy;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 </style>
 </head>
 
 <body>
-<h1>Secret Steph Page</h1>
-<p>hehehehehe</p>
+<h1 id="animated">Secret Steph Page</h1>
+<p>hehehehehehe</p>
 <img src="vday.png" title= "I love you!" alt="Impressive of you to discover this secret text." style="float:left"></img>
 
-<img src="sanic.png" title="yOuR'e ToO sLoW!!!111!!!!" alt= "WHERE DID SANIC GOOO???!?!?!?!?" style=""></img>
+<img src="sanic.png" title="yOuR'e ToO sLoW!!!111!!!!" alt= "WHERE DID SANIC GOOO???!?!?!?!?" style="float:right"></img>
 <!--<div class = "heart"></div>-->
 </body>
 <audio controls autoplay>
@@ -145,6 +165,31 @@ function check()
 		generateHeart(event.pageX - brd.offsetLeft + cursorXOffset, event.pageY - brd.offsetTop + cursorYOffset, bound, start, scale);
 	}
 }
+</script>
+<script>
+function updateText(text){
+
+let delay = 200;
+
+	let h1 = document.getElementById("animated");
+
+      h1.innerHTML = text
+        .split("")
+        .map(letter => {
+          console.log(letter);
+          return `<span>` + letter + `</span>`;
+        })
+        .join("");
+
+      Array.from(h1.children).forEach((span, index) => {
+        setTimeout(() => {
+          span.classList.add("wavy");
+        }, index * 60 + delay);
+      });
+
+}
+
+updateText("Secret Steph Page");
 </script>
 
 </html>
